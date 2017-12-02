@@ -27,5 +27,5 @@ Note the Alarm ID after this is created, and populate the `ALARM_ID` variable al
 fission env create --name openstack-tools --image jmarhee/openstack-tools-2017-12-01
 ```
 ```
-fission fn create --name slack-alert-compute --url /create-notify-slack --code aod-activity.slack.py --env openstack-tools --method POST
+fission fn create --name slack-alert-compute --url /create-notify-slack --code alarm-receiver-slack.py --env openstack-tools --method POST
 ```
